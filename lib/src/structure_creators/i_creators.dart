@@ -19,5 +19,6 @@ abstract class IFileCreator {
 }
 
 abstract class IPubspecCreator {
-  Future<void> getPackageVersion();
+  Future<bool> getPackageVersion();
+  Future<void> writeDependencies();
 }

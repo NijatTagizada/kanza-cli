@@ -18,7 +18,7 @@ class CreateCommand implements ICommand {
       fileCreator: fileCreator,
     );
 
-    // await nextCommand?.execute();
+    await nextCommand?.execute();
 
     return kanzaCreator.create();
   }

@@ -35,8 +35,6 @@ class KanzaCommandRunner {
           if (res) {
             bool isNeedPubUpdate = argResult['get-packages'];
 
-            print('isNeedPubUpdate: $isNeedPubUpdate');
-
             command = CreateCommand(
               nextCommand: isNeedPubUpdate ? PubUpdaterCommand() : null,
             );
